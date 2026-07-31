@@ -1,12 +1,5 @@
-# Web de Jordi Conde
+# Web V2 — Jordi Conde Baltrons
 
-Web professional de traduccions, correccions i locucions.
+Puja el contingut d’aquesta carpeta al repositori `jordiconde-traduccions.github.io` i substitueix els fitxers anteriors.
 
-## Fitxers
-- `index.html`: contingut principal
-- `styles.css`: disseny
-- `script.js`: menú mòbil i animacions
-- `audio/`: carpeta per als fitxers MP3
-
-## Publicació
-Puja tots els fitxers a l'arrel del repositori `portfolio`.
+Pendents: afegir els MP3 definitius, seleccionar les imatges finals i incorporar una galeria de projectes.
