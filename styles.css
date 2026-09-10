@@ -68,3 +68,28 @@
   color: var(--muted);
   max-width: 700px;
 }
+
+.school-email {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 12px;
+  font-weight: 700;
+}
+
+.copy-email {
+  padding: 10px 16px;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink);
+  font-family: Manrope, system-ui, sans-serif;
+  font-size: .85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.copy-email:hover {
+  background: var(--ink);
+  color: white;
+}
