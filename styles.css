@@ -93,3 +93,10 @@
   background: var(--ink);
   color: white;
 }
+
+@media(max-width: 480px) {
+  .books-grid {
+    grid-template-columns: 220px;
+    justify-content: center;
+  }
+}
