@@ -101,13 +101,19 @@
   }
 }
 .back-to-top {
-  display: block;
-  width: fit-content;
-  margin: 28px auto;
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 1000;
+  padding: 10px 16px;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  background: white;
+  color: var(--ink);
   font-size: .9rem;
   font-weight: 700;
-  color: var(--ink);
   text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0,0,0,.10);
   transition: .2s;
 }
 
