@@ -120,3 +120,20 @@
 .back-to-top:hover {
   transform: translateY(-3px);
 }
+.back-home {
+  display: inline-block;
+  margin: 28px 0 0 28px;
+  padding: 9px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--ink);
+  font-size: .85rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.back-home:hover {
+  transform: translateX(-3px);
+  background: var(--mint);
+}
