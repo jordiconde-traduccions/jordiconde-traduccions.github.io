@@ -137,3 +137,38 @@
   transform: translateX(-3px);
   background: var(--mint);
 }
+
+.curiosity-grid {
+  margin-top: 50px;
+}
+
+.curiosity-card {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.curiosity-card img {
+  width: 155px;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+.curiosity-info {
+  flex: 1;
+}
+
+.curiosity-info h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.8rem;
+  line-height: 1.15;
+  margin-bottom: 10px;
+}
+
+.curiosity-info p {
+  color: var(--muted);
+  line-height: 1.65;
+}
