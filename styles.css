@@ -175,3 +175,8 @@
   color: var(--muted);
   line-height: 1.65;
 }
+
+.collection-link {
+  text-align: center;
+  margin-top: 55px;
+}
