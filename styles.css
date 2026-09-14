@@ -179,4 +179,11 @@
 .collection-link {
   text-align: center;
   margin-top: 55px;
+
+}
+.curiosity-info h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.8rem;
+  line-height: 1.15;
+  margin-bottom: 10px;
 }
