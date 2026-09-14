@@ -225,3 +225,7 @@
 .graded-section {
   padding-top: 55px;
 }
+
+.books-section {
+  background: var(--mint);
+}
