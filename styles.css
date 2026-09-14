@@ -208,3 +208,16 @@
 .collection-section {
   padding-top: 55px;
 }
+
+.graded-banner {
+  max-width: 900px;
+  margin: 40px auto 0;
+  padding: 0 24px;
+}
+
+.graded-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
