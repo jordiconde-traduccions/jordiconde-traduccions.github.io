@@ -221,3 +221,7 @@
   display: block;
   border-radius: 12px;
 }
+
+.graded-section {
+  padding-top: 55px;
+}
