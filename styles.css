@@ -93,7 +93,117 @@
   background: var(--ink);
   color: white;
 }
+.schools-box {
+  max-width: 900px;
+  padding: 44px;
+}
 
+.schools-box h2 {
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  line-height: 1.1;
+  margin-bottom: 28px;
+}
+
+.schools-box h3 {
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
+  line-height: 1.15;
+  margin-top: 36px;
+  margin-bottom: 14px;
+}
+
+.schools-box p {
+  max-width: 100%;
+  margin-bottom: 16px;
+  line-height: 1.75;
+}
+
+.schools-pricing {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 30px;
+  margin: 34px 0;
+}
+
+.schools-pricing h3 {
+  margin-top: 0;
+}
+
+.schools-pricing .schools-price {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--ink);
+  margin: 22px 0 8px;
+}
+
+.schools-price span {
+  font-family: Manrope, system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.schools-pricing ul {
+  margin: 24px 0 0;
+  padding-left: 22px;
+}
+
+.schools-pricing li {
+  margin-bottom: 12px;
+  line-height: 1.65;
+}
+
+.school-contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 22px;
+  margin-top: 14px;
+  background: var(--ink);
+  color: white;
+  border-radius: 999px;
+  font-size: .9rem;
+  font-weight: 700;
+  text-align: center;
+  transition: .2s;
+}
+
+.school-contact-btn:hover {
+  transform: translateY(-2px);
+  background: var(--bronze);
+}
+
+.schools-email-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.schools-email-row .school-email {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 560px) {
+  .schools-box {
+    padding: 26px 20px;
+  }
+
+  .schools-pricing {
+    padding: 24px 20px;
+  }
+
+  .schools-pricing .schools-price {
+    font-size: 3.3rem;
+  }
+
+  .school-contact-btn {
+    width: 100%;
+  }
+}
 @media(max-width: 480px) {
   .books-grid {
     grid-template-columns: 220px;
