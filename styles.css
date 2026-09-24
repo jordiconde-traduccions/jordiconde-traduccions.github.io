@@ -339,3 +339,12 @@
 .books-section {
   background: #f7faf7;
 }
+
+/* Logotip Verger de Lletres a la pàgina inicial */
+.verger-logo {
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  margin: 0 0 28px 0;
+}
