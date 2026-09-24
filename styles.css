@@ -687,3 +687,19 @@ a.book-buy + a.book-buy {
     font-size: clamp(1.35rem, 5vw, 1.8rem);
   }
 }
+
+/* Logotip de la pàgina de serveis */
+
+.serveis-logo {
+  display: block;
+  width: fit-content;
+  max-width: 90%;
+  margin: 35px auto 10px;
+}
+
+.serveis-logo img {
+  display: block;
+  width: 260px;
+  max-width: 100%;
+  height: auto;
+}
