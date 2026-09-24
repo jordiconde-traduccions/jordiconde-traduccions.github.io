@@ -354,3 +354,76 @@
     padding-top: 45px;
   }
 }
+
+/* Apartat Dibuixant el català */
+.dibuixant-section {
+  padding: 70px 0;
+  background: #f7faf7;
+  text-align: center;
+}
+
+.dibuixant-section h2 {
+  margin-bottom: 18px;
+}
+
+.dibuixant-section > .wrap > p {
+  max-width: 700px;
+  margin: 0 auto 42px;
+}
+
+.dibuixant-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.dibuixant-book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dibuixant-book > a:first-child {
+  width: 100%;
+  max-width: 270px;
+}
+
+.dibuixant-book img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.dibuixant-book h3 {
+  margin: 24px 0 12px;
+  font-size: 1.25rem;
+}
+
+.dibuixant-level {
+  margin-bottom: 16px;
+}
+
+.dibuixant-btn {
+  display: inline-block;
+  margin-top: auto;
+  padding: 12px 22px;
+  border-radius: 6px;
+  background: #9a7558;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.dibuixant-btn:hover {
+  background: #78583f;
+}
+
+@media (max-width: 600px) {
+  .dibuixant-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
