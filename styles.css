@@ -348,3 +348,9 @@
   height: auto;
   margin: 0 0 28px 0;
 }
+
+@media (min-width: 901px) {
+  .hero {
+    padding-top: 45px;
+  }
+}
