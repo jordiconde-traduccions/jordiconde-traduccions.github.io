@@ -519,3 +519,171 @@ a.book-buy + a.book-buy {
     gap: 55px;
   }
 }
+
+/* Pàgina de serveis */
+
+.serveis-page {
+  background: #f8f5ef;
+  color: #171918;
+}
+
+.serveis-intro {
+  padding: 75px 0 85px;
+  text-align: center;
+}
+
+.serveis-intro h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  max-width: 1000px;
+  margin: 0 auto 25px;
+}
+
+.serveis-intro p {
+  max-width: 780px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.servei-detall {
+  padding: 85px 0;
+  border-top: 1px solid rgba(23, 25, 24, 0.14);
+  scroll-margin-top: 30px;
+}
+
+.servei-detall:nth-of-type(even) {
+  background: #e8f2ed;
+}
+
+/* Fotografia a l'esquerra i títol a la dreta */
+
+.servei-capcalera {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  gap: 55px;
+  align-items: center;
+  margin-bottom: 65px;
+}
+
+.servei-capcalera img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.servei-capcalera-text {
+  min-width: 0;
+}
+
+.servei-numero {
+  display: block;
+  color: #9a7558;
+  font-size: clamp(6rem, 12vw, 11rem);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+  margin-bottom: 22px;
+}
+
+.servei-capcalera h2 {
+  font-size: clamp(3rem, 5.5vw, 5.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+  overflow-wrap: break-word;
+  margin-bottom: 25px;
+}
+
+.servei-frase {
+  font-size: clamp(1.4rem, 2.3vw, 2rem);
+  font-weight: 800;
+  line-height: 1.35;
+  max-width: 580px;
+}
+
+/* Textos explicatius */
+
+.servei-contingut {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.servei-contingut p {
+  margin-bottom: 20px;
+}
+
+.servei-contingut h3 {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  line-height: 1.25;
+  margin: 48px 0 22px;
+}
+
+.servei-contingut ul {
+  padding-left: 28px;
+  margin-bottom: 25px;
+}
+
+.servei-contingut li {
+  margin-bottom: 10px;
+}
+
+/* Botons */
+
+.servei-contacte,
+.servei-mostres {
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: 8px;
+  background: #9a7558;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.servei-contacte:hover,
+.servei-mostres:hover {
+  background: #78583f;
+}
+
+.servei-mostres {
+  margin-bottom: 15px;
+}
+
+/* Adaptació a mòbils */
+
+@media (max-width: 800px) {
+  .serveis-intro {
+    padding: 55px 0;
+  }
+
+  .servei-detall {
+    padding: 60px 0;
+  }
+
+  .servei-capcalera {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 45px;
+  }
+
+  .servei-capcalera img {
+    max-width: 600px;
+  }
+
+  .servei-numero {
+    font-size: clamp(5rem, 18vw, 8rem);
+  }
+
+  .servei-capcalera h2 {
+    font-size: clamp(2.8rem, 9vw, 4.5rem);
+  }
+
+  .servei-frase {
+    font-size: clamp(1.35rem, 5vw, 1.8rem);
+  }
+}
