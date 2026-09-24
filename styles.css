@@ -703,3 +703,28 @@ a.book-buy + a.book-buy {
   max-width: 100%;
   height: auto;
 }
+
+/* Botons per escriure amb Gmail */
+
+.servei-gmail {
+  display: inline-block;
+  padding: 14px 24px;
+  margin: 10px 0 0 10px;
+  border-radius: 8px;
+  background: #365c4b;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.servei-gmail:hover {
+  background: #274537;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .servei-gmail {
+    margin-left: 0;
+  }
+}
