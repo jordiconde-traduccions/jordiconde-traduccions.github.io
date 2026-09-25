@@ -765,3 +765,8 @@ transform: translateX(340px);
   font-weight: 600;
   font-style: italic;
 }
+
+/* Títol Lectures graduades en català */
+.books-kicker {
+  font-size: 1.25rem;
+}
