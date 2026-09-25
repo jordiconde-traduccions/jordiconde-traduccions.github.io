@@ -743,6 +743,6 @@ a.book-buy + a.book-buy {
   width: 260px;
   max-width: 90%;
   height: auto;
-  margin: 18px auto 0;
-  transform: translateX(25px);
+  margin: -5px auto 0;
+transform: translateX(230px);
 }
