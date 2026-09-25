@@ -740,8 +740,9 @@ a.book-buy + a.book-buy {
 /* Logo petit a la zona de contacte */
 .contact-logo {
   display: block;
-  width: 220px;
+  width: 260px;
   max-width: 90%;
   height: auto;
-  margin: 30px auto 0;
+  margin: 18px auto 0;
+  transform: translateX(25px);
 }
