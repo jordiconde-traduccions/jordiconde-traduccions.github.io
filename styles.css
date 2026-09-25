@@ -770,3 +770,8 @@ transform: translateX(340px);
 .books-kicker {
   font-size: 1.70rem;
 }
+
+/* Títol de la caixa per a escoles */
+.schools-box h3 {
+  font-size: 2.3rem;
+}
