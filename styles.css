@@ -728,3 +728,10 @@ a.book-buy + a.book-buy {
     margin-left: 0;
   }
 }
+
+/* Números de les targetes de serveis de la pàgina principal */
+.service-grid .service-card > span {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
