@@ -736,3 +736,12 @@ a.book-buy + a.book-buy {
   line-height: 1;
   letter-spacing: -0.08em;
 }
+
+/* Logo petit a la zona de contacte */
+.contact-logo {
+  display: block;
+  width: 140px;
+  max-width: 100%;
+  height: auto;
+  margin-top: 22px;
+}
