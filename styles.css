@@ -800,24 +800,24 @@ transform: translateX(340px);
 
 /* Locució */
 .collage-locucio {
-  left: 35%;
+  left: 29%;
   bottom: 4%;
 }
 
 /* Traducció */
 .collage-traduccio {
-  left: 68%;
+  left: 51%;
   bottom: 4%;
 }
 
 /* Correcció */
 .collage-correccio {
   right: 2%;
-  bottom: 4%;
+  top: 22%;
 }
 
 /* Edició de llibres */
 .collage-edicio {
-  left: 76%;
-  top: 22%;
+  left: 68%;
+  top: 4%;
 }
