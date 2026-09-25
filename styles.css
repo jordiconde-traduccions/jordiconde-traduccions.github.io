@@ -806,7 +806,7 @@ transform: translateX(340px);
 
 /* Traducció */
 .collage-traduccio {
-  left: 57%;
+  left: 56%;
   bottom: 4%;
 }
 
@@ -819,5 +819,5 @@ transform: translateX(340px);
 /* Edició de llibres */
 .collage-edicio {
   left: 68%;
-  top: 13%;
+  top: 15%;
 }
