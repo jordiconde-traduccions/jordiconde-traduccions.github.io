@@ -821,3 +821,8 @@ transform: translateX(340px);
   left: 68%;
   top: 15%;
 }
+
+/* Títol principal de la pàgina de lectures graduades */
+.graded-section .section-head h1 {
+  font-size: clamp(2.8rem, 5vw, 4.8rem);
+}
