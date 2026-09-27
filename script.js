@@ -89,15 +89,18 @@ if (orderForm) {
     total.textContent = `${totalAmount} €`;
 
     if (books < 25) {
-      message.textContent = `La comanda mínima és de 25 exemplars. En falten ${25 - books}.`;
-      submitButton.disabled = true;
-    } else if (books < 50) {
-      message.textContent = 'Comanda mínima assolida.';
-      submitButton.disabled = false;
-    } else {
-      message.textContent = 'Enviament gratuït.';
-      submitButton.disabled = false;
-    }
+  message.textContent = `La comanda mínima és de 25 exemplars. En falten ${25 - books}.`;
+} else if (books < 50) {
+  message.textContent = 'Comanda mínima assolida.';
+} else {
+  message.textContent = 'Enviament gratuït.';
+}
+
+const fieldsCompleted = Array.from(requiredFields).every(field =>
+  field.value.trim() !== ''
+);
+
+submitButton.disabled = books < 25 || !fieldsCompleted;
   }
 
   quantityInputs.forEach(input => {
