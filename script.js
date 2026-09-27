@@ -54,7 +54,8 @@ if (orderForm) {
   const total = document.getElementById('order-total');
   const message = document.getElementById('order-message');
   const submitButton = orderForm.querySelector('.school-order-submit');
-
+  const requiredFields = orderForm.querySelectorAll('[required]');
+  
   function updateOrder() {
     let books = 0;
 
