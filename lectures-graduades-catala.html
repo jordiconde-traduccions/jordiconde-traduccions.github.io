@@ -141,17 +141,157 @@
 
   </div>
 
-  <h3>Voleu incorporar les nostres lectures al vostre centre?</h3>
+    <div class="school-order">
 
-  <p>Si voleu rebre més informació sobre la col·lecció o fer una comanda, envieu-nos un correu electrònic indicant els títols i el nombre d'exemplars que necessiteu.</p>
+    <h3>Feu la vostra comanda</h3>
 
-  <p>Us prepararem un pressupost sense compromís amb tots els detalls de la comanda, les condicions de pagament i el termini de lliurament.</p>
+    <p>Seleccioneu els títols i indiqueu el nombre d'exemplars que necessiteu. Podeu combinar llibres de diferents nivells en una mateixa comanda.</p>
 
-  <a class="school-contact-btn" href="mailto:jordi@vergerdelletres.cat?subject=Consulta%20sobre%20les%20lectures%20graduades%20en%20catal%C3%A0">Sol·licitar informació o pressupost</a>
+    <form id="school-order-form">
 
-  <div class="schools-email-row">
-    <a class="school-email" href="mailto:jordi@vergerdelletres.cat">jordi@vergerdelletres.cat</a>
-    <button class="copy-email" type="button" data-email="jordi@vergerdelletres.cat">Copiar correu</button>
+      <div class="order-books">
+
+        <div class="order-level">Nivell A1 · Inicial</div>
+
+        <div class="order-book">
+          <label for="qty-pessic">Faig un pa de pessic</label>
+          <input type="number" id="qty-pessic" class="book-quantity" min="0" value="0" data-title="Faig un pa de pessic">
+        </div>
+
+        <div class="order-book">
+          <label for="qty-pirates">Pirates a la Mediterrània</label>
+          <input type="number" id="qty-pirates" class="book-quantity" min="0" value="0" data-title="Pirates a la Mediterrània">
+        </div>
+
+        <div class="order-book">
+          <label for="qty-vacances">Me'n vaig de vacances</label>
+          <input type="number" id="qty-vacances" class="book-quantity" min="0" value="0" data-title="Me'n vaig de vacances">
+        </div>
+
+        <div class="order-level">Nivell A2 · Bàsic</div>
+
+        <div class="order-book">
+          <label for="qty-superpizzer">Vull ser un superpizzer</label>
+          <input type="number" id="qty-superpizzer" class="book-quantity" min="0" value="0" data-title="Vull ser un superpizzer">
+        </div>
+
+        <div class="order-book">
+          <label for="qty-croata">Travesso la costa croata</label>
+          <input type="number" id="qty-croata" class="book-quantity" min="0" value="0" data-title="Travesso la costa croata">
+        </div>
+
+        <div class="order-book">
+          <label for="qty-alaska">Una nova vida a Alaska</label>
+          <input type="number" id="qty-alaska" class="book-quantity" min="0" value="0" data-title="Una nova vida a Alaska">
+        </div>
+
+        <div class="order-level">Nivell B1 · Intermedi</div>
+
+        <div class="order-book">
+          <label for="qty-poble">Ens mudem al poble</label>
+          <input type="number" id="qty-poble" class="book-quantity" min="0" value="0" data-title="Ens mudem al poble">
+        </div>
+
+        <div class="order-book">
+          <label for="qty-feina">La meva primera feina</label>
+          <input type="number" id="qty-feina" class="book-quantity" min="0" value="0" data-title="La meva primera feina">
+        </div>
+
+        <div class="order-book">
+          <label for="qty-japo">Japó, la gran aventura</label>
+          <input type="number" id="qty-japo" class="book-quantity" min="0" value="0" data-title="Japó, la gran aventura">
+        </div>
+
+      </div>
+
+      <div class="order-summary">
+
+        <div class="order-summary-row">
+          <span>Exemplars</span>
+          <strong id="order-total-books">0</strong>
+        </div>
+
+        <div class="order-summary-row">
+          <span>Subtotal</span>
+          <strong id="order-subtotal">0 €</strong>
+        </div>
+
+        <div class="order-summary-row">
+          <span>Enviament</span>
+          <strong id="order-shipping">—</strong>
+        </div>
+
+        <div class="order-summary-row order-total">
+          <span>Total</span>
+          <strong id="order-total">0 €</strong>
+        </div>
+
+        <p id="order-message" class="order-message">
+          La comanda mínima és de 25 exemplars.
+        </p>
+
+      </div>
+
+      <div class="order-customer">
+
+        <h3>Dades del centre</h3>
+
+        <div class="order-fields">
+
+          <div class="order-field order-field-wide">
+            <label for="centre-name">Nom del centre *</label>
+            <input type="text" id="centre-name" name="centre" required>
+          </div>
+
+          <div class="order-field">
+            <label for="contact-name">Persona de contacte *</label>
+            <input type="text" id="contact-name" name="contacte" required>
+          </div>
+
+          <div class="order-field">
+            <label for="contact-email">Correu electrònic *</label>
+            <input type="email" id="contact-email" name="email" required>
+          </div>
+
+          <div class="order-field order-field-wide">
+            <label for="shipping-address">Adreça d'enviament *</label>
+            <input type="text" id="shipping-address" name="adreca" required>
+          </div>
+
+          <div class="order-field">
+            <label for="postal-code">Codi postal *</label>
+            <input type="text" id="postal-code" name="codi_postal" required>
+          </div>
+
+          <div class="order-field">
+            <label for="city">Població *</label>
+            <input type="text" id="city" name="poblacio" required>
+          </div>
+
+          <div class="order-field order-field-wide">
+            <label for="order-notes">Observacions</label>
+            <textarea id="order-notes" name="observacions" rows="4"></textarea>
+          </div>
+
+        </div>
+
+      </div>
+
+      <button type="submit" class="school-order-submit" disabled>
+        Enviar comanda
+      </button>
+
+    </form>
+
+    <div class="school-order-info">
+      <p><strong>Només voleu informació?</strong> Si teniu qualsevol dubte sobre els llibres, els nivells o les comandes per a centres, ens podeu enviar un correu.</p>
+
+      <div class="schools-email-row">
+        <a class="school-email" href="mailto:jordi@vergerdelletres.cat">jordi@vergerdelletres.cat</a>
+        <button class="copy-email" type="button" data-email="jordi@vergerdelletres.cat">Copiar correu</button>
+      </div>
+    </div>
+
   </div>
 
 </div>
