@@ -826,3 +826,250 @@ transform: translateX(340px);
 .graded-section .section-head h1 {
   font-size: clamp(2.8rem, 5vw, 4.8rem);
 }
+
+/* Formulari de comandes per a centres educatius */
+
+.school-order {
+  margin-top: 42px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+}
+
+.school-order > h3 {
+  margin-top: 36px;
+}
+
+.order-books {
+  margin-top: 28px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.order-level {
+  padding: 12px 20px;
+  background: rgba(207, 222, 214, .55);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--bronze);
+}
+
+.order-level:first-child {
+  border-top: 0;
+}
+
+.order-book {
+  display: grid;
+  grid-template-columns: 1fr 90px;
+  gap: 20px;
+  align-items: center;
+  min-height: 58px;
+  padding: 9px 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.order-book:last-child {
+  border-bottom: 0;
+}
+
+.order-book label {
+  font-size: .95rem;
+  font-weight: 600;
+}
+
+.book-quantity {
+  width: 78px;
+  height: 40px;
+  padding: 0 8px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+  color: var(--ink);
+  font-family: Manrope, system-ui, sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.book-quantity:focus,
+.order-field input:focus,
+.order-field textarea:focus {
+  outline: 2px solid var(--bronze);
+  outline-offset: 1px;
+}
+
+/* Resum de la comanda */
+
+.order-summary {
+  margin-top: 24px;
+  padding: 24px 28px;
+  background: var(--ink);
+  color: white;
+  border-radius: 18px;
+}
+
+.order-summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 8px 0;
+  font-size: .95rem;
+}
+
+.order-summary-row strong {
+  font-size: 1rem;
+}
+
+.order-total {
+  margin-top: 8px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255,255,255,.22);
+}
+
+.order-total span,
+.order-total strong {
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.order-summary .order-message {
+  margin: 14px 0 0;
+  color: rgba(255,255,255,.68);
+  font-size: .85rem;
+  line-height: 1.5;
+}
+
+/* Dades del centre */
+
+.order-customer {
+  margin-top: 40px;
+}
+
+.order-customer h3 {
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+.order-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.order-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.order-field-wide {
+  grid-column: 1 / -1;
+}
+
+.order-field label {
+  font-size: .82rem;
+  font-weight: 700;
+}
+
+.order-field input,
+.order-field textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--white);
+  color: var(--ink);
+  padding: 12px 14px;
+  font-family: Manrope, system-ui, sans-serif;
+  font-size: .95rem;
+}
+
+.order-field input {
+  min-height: 46px;
+}
+
+.order-field textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Botó d'enviament */
+
+.school-order-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  margin-top: 26px;
+  padding: 0 26px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--ink);
+  color: white;
+  font-family: Manrope, system-ui, sans-serif;
+  font-size: .9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.school-order-submit:not(:disabled):hover {
+  transform: translateY(-2px);
+  background: var(--bronze);
+}
+
+.school-order-submit:disabled {
+  opacity: .35;
+  cursor: not-allowed;
+}
+
+/* Consultes */
+
+.school-order-info {
+  margin-top: 42px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.school-order-info > p {
+  margin-bottom: 0;
+}
+
+/* Formulari en mòbil */
+
+@media (max-width: 600px) {
+
+  .order-book {
+    grid-template-columns: 1fr 70px;
+    gap: 12px;
+    padding: 10px 14px;
+  }
+
+  .book-quantity {
+    width: 64px;
+  }
+
+  .order-level {
+    padding: 11px 14px;
+  }
+
+  .order-summary {
+    padding: 20px;
+  }
+
+  .order-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .order-field-wide {
+    grid-column: auto;
+  }
+
+  .school-order-submit {
+    width: 100%;
+  }
+}
