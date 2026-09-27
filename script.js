@@ -104,8 +104,12 @@ submitButton.disabled = books < 25 || !fieldsCompleted;
   }
 
   quantityInputs.forEach(input => {
-    input.addEventListener('input', updateOrder);
-  });
+  input.addEventListener('input', updateOrder);
+});
 
-  updateOrder();
+requiredFields.forEach(field => {
+  field.addEventListener('input', updateOrder);
+});
+
+updateOrder();
 }
