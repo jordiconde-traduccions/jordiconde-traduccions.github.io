@@ -92,6 +92,11 @@ if (orderForm) {
 
     total.textContent = `${totalAmount} €`;
 
+    formTotalBooks.value = books;
+    formSubtotal.value = `${subtotalAmount} €`;
+    formShipping.value = books >= 50 ? 'Gratuït' : books >= 25 ? '20 €' : '—';
+    formTotal.value = `${totalAmount} €`;
+    
     if (books < 25) {
   message.textContent = `La comanda mínima és de 25 exemplars. En falten ${25 - books}.`;
 } else if (books < 50) {
