@@ -139,8 +139,10 @@ orderForm.addEventListener('submit', async event => {
     const result = await response.json();
 
     if (result.success) {
-      alert('Comanda enviada correctament.');
-    } else {
+  const successMessage = document.getElementById('order-success');
+  successMessage.hidden = false;
+  successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+} else {
       alert('No s’ha pogut enviar la comanda. Torneu-ho a provar.');
     }
   } catch (error) {
