@@ -124,6 +124,12 @@ orderForm.addEventListener('submit', async event => {
 
   const formData = new FormData(orderForm);
 
+  quantityInputs.forEach(input => {
+  if ((parseInt(input.value) || 0) === 0) {
+    formData.delete(input.name);
+  }
+});
+  
   try {
     const response = await fetch('https://api.web3forms.com/submit', {
       method: 'POST',
