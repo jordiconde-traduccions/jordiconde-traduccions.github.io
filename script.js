@@ -119,6 +119,27 @@ submitButton.disabled = books < 25 || !fieldsCompleted;
 requiredFields.forEach(field => {
   field.addEventListener('input', updateOrder);
 });
+orderForm.addEventListener('submit', async event => {
+  event.preventDefault();
 
+  const formData = new FormData(orderForm);
+
+  try {
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+      alert('Comanda enviada correctament.');
+    } else {
+      alert('No s’ha pogut enviar la comanda. Torneu-ho a provar.');
+    }
+  } catch (error) {
+    alert('No s’ha pogut enviar la comanda. Torneu-ho a provar.');
+  }
+});
 updateOrder();
 }
