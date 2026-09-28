@@ -1134,3 +1134,8 @@ transform: translateX(340px);
   font-size: .95rem;
   line-height: 1.6;
 }
+
+/* Separació entre el text de Dibuixant el català i els llibres */
+.dibuixant-section > p {
+  margin-bottom: 40px;
+}
