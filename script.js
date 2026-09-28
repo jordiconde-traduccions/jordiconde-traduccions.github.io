@@ -139,6 +139,9 @@ orderForm.addEventListener('submit', async event => {
     const result = await response.json();
 
     if (result.success) {
+  submitButton.disabled = true;
+  submitButton.textContent = 'Comanda enviada ✓';
+
   const successMessage = document.getElementById('order-success');
   successMessage.hidden = false;
   successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
