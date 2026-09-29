@@ -60,6 +60,7 @@ if (orderForm) {
   const formSubtotal = document.getElementById('form-subtotal');
   const formShipping = document.getElementById('form-shipping');
   const formTotal = document.getElementById('form-total');
+
   function updateOrder() {
     let books = 0;
 
@@ -68,24 +69,13 @@ if (orderForm) {
     });
 
     const subtotalAmount = books * 12;
-
-    let shippingAmount = 0;
-
-    if (books >= 25 && books < 50) {
-      shippingAmount = 20;
-    }
-
-    const totalAmount = subtotalAmount + shippingAmount;
+    const totalAmount = subtotalAmount;
 
     totalBooks.textContent = books;
     subtotal.textContent = `${subtotalAmount} €`;
 
     if (books === 0) {
       shipping.textContent = '—';
-    } else if (books < 25) {
-      shipping.textContent = '—';
-    } else if (books < 50) {
-      shipping.textContent = '20 €';
     } else {
       shipping.textContent = 'Gratuït';
     }
@@ -94,63 +84,66 @@ if (orderForm) {
 
     formTotalBooks.value = books;
     formSubtotal.value = `${subtotalAmount} €`;
-    formShipping.value = books >= 50 ? 'Gratuït' : books >= 25 ? '20 €' : '—';
+    formShipping.value = books === 0 ? '—' : 'Gratuït';
     formTotal.value = `${totalAmount} €`;
-    
-    if (books < 25) {
-  message.textContent = `La comanda mínima és de 25 exemplars. En falten ${25 - books}.`;
-} else if (books < 50) {
-  message.textContent = 'Comanda mínima assolida.';
-} else {
-  message.textContent = 'Enviament gratuït.';
-}
 
-const fieldsCompleted = Array.from(requiredFields).every(field =>
-  field.value.trim() !== ''
-);
+    if (books < 20) {
+      message.textContent = `La comanda mínima és de 20 exemplars. En falten ${20 - books}.`;
+    } else {
+      message.textContent = 'Comanda mínima assolida · Enviament gratuït.';
+    }
 
-submitButton.disabled = books < 25 || !fieldsCompleted;
+    const fieldsCompleted = Array.from(requiredFields).every(field =>
+      field.value.trim() !== ''
+    );
+
+    submitButton.disabled = books < 20 || !fieldsCompleted;
   }
 
   quantityInputs.forEach(input => {
-  input.addEventListener('input', updateOrder);
-});
+    input.addEventListener('input', updateOrder);
+  });
 
-requiredFields.forEach(field => {
-  field.addEventListener('input', updateOrder);
-});
-orderForm.addEventListener('submit', async event => {
-  event.preventDefault();
+  requiredFields.forEach(field => {
+    field.addEventListener('input', updateOrder);
+  });
 
-  const formData = new FormData(orderForm);
+  orderForm.addEventListener('submit', async event => {
+    event.preventDefault();
 
-  quantityInputs.forEach(input => {
-  if ((parseInt(input.value) || 0) === 0) {
-    formData.delete(input.name);
-  }
-});
-  
-  try {
-    const response = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      body: formData
+    const formData = new FormData(orderForm);
+
+    quantityInputs.forEach(input => {
+      if ((parseInt(input.value) || 0) === 0) {
+        formData.delete(input.name);
+      }
     });
 
-    const result = await response.json();
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData
+      });
 
-    if (result.success) {
-  submitButton.disabled = true;
-  submitButton.textContent = 'Comanda enviada ✓';
+      const result = await response.json();
 
-  const successMessage = document.getElementById('order-success');
-  successMessage.hidden = false;
-  successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
-} else {
+      if (result.success) {
+        submitButton.disabled = true;
+        submitButton.textContent = 'Comanda enviada ✓';
+
+        const successMessage = document.getElementById('order-success');
+        successMessage.hidden = false;
+        successMessage.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center'
+        });
+      } else {
+        alert('No s’ha pogut enviar la comanda. Torneu-ho a provar.');
+      }
+    } catch (error) {
       alert('No s’ha pogut enviar la comanda. Torneu-ho a provar.');
     }
-  } catch (error) {
-    alert('No s’ha pogut enviar la comanda. Torneu-ho a provar.');
-  }
-});
-updateOrder();
+  });
+
+  updateOrder();
 }
