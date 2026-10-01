@@ -1139,3 +1139,37 @@ transform: translateX(340px);
 .dibuixant-section > p {
   margin-bottom: 40px;
 }
+
+/* Fullet informatiu · Lectures graduades */
+
+.schools-brochure {
+  margin: 2.5rem 0;
+  padding: 2rem 2.2rem;
+  background: #eaf4ee;
+  border-radius: 18px;
+}
+
+.schools-brochure h3 {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+}
+
+.schools-brochure p {
+  margin-bottom: 1.4rem;
+}
+
+.schools-brochure-button {
+  display: inline-block;
+  padding: 0.85rem 1.35rem;
+  background: #173f6b;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.schools-brochure-button:hover {
+  background: #0f3156;
+  transform: translateY(-2px);
+}
