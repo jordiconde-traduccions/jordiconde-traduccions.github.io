@@ -1143,7 +1143,7 @@ transform: translateX(340px);
 /* Fullet informatiu · Lectures graduades */
 
 .schools-brochure {
-  margin: 2.5rem 0;
+  margin: 2.5rem -1.8rem;
   padding: 2rem 2.2rem;
   background: #eaf4ee;
   border-radius: 18px;
