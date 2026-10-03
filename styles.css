@@ -1175,10 +1175,10 @@ transform: translateX(340px);
 }
 
 .hero-quote{
-  margin-top:14px;
+  margin-top:20px;
   text-align:left;
   font-family:Manrope,system-ui,sans-serif;
-  font-size:1rem;
+  font-size:1.08rem;
   line-height:1.45;
   color:var(--ink);
 }
