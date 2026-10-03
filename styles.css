@@ -1178,7 +1178,7 @@ transform: translateX(340px);
   margin-top:14px;
   text-align:left;
   font-family:Manrope,system-ui,sans-serif;
-  font-size:.88rem;
+  font-size:1rem;
   line-height:1.45;
   color:var(--ink);
 }
@@ -1194,6 +1194,6 @@ transform: translateX(340px);
   margin-top:2px;
   font-style:normal;
   font-weight:400;
-  font-size:.78rem;
+  font-size:.86rem;
   color:var(--muted);
 }
