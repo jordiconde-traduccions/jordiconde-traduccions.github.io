@@ -1,15 +1,34 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://vergerdelletres.cat/</loc>
   </url>
   <url>
+    <loc>https://vergerdelletres.cat/serveis.html</loc>
+  </url>
+  <url>
     <loc>https://vergerdelletres.cat/lectures-graduades-catala.html</loc>
+  </url>
+  <url>
+    <loc>https://vergerdelletres.cat/altres-llibres.html</loc>
   </url>
   <url>
     <loc>https://vergerdelletres.cat/es/</loc>
   </url>
   <url>
+    <loc>https://vergerdelletres.cat/es/servicios.html</loc>
+  </url>
+  <url>
     <loc>https://vergerdelletres.cat/es/curiosidades-del-mundo.html</loc>
+  </url>
+  <url>
+    <loc>https://vergerdelletres.cat/en/</loc>
+  </url>
+  <url>
+    <loc>https://vergerdelletres.cat/pt/</loc>
+  </url>
+  <url>
+    <loc>https://vergerdelletres.cat/pt/servicos.html</loc>
   </url>
 </urlset>
