@@ -1065,8 +1065,8 @@ const riquesaEntrades = [
   {
     "categoria": "Mot",
     "expressio": "Ensumar",
-    "significat": "Percebre una olor o olorar alguna cosa.",
-    "exemple": "Des del carrer ja s'ensumava el pa acabat de fer."
+    "significat": "Sentir l’olor (d’alguna cosa), discernir amb l’olor.",
+    "exemple": "Els gossos lladren: ja han ensumat l’amo."
   },
   {
     "categoria": "Mot",
