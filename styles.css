@@ -1197,3 +1197,113 @@ transform: translateX(340px);
   font-size:.86rem;
   color:var(--muted);
 }
+
+/* La riquesa de la llengua */
+
+.riquesa-section {
+  background: var(--paper);
+  padding: 105px 0 115px;
+  text-align: center;
+}
+
+.riquesa-wrap {
+  max-width: 850px;
+}
+
+.riquesa-ornament {
+  color: var(--bronze);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 18px;
+}
+
+.riquesa-section h2 {
+  max-width: none;
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  margin-bottom: 20px;
+}
+
+.riquesa-intro {
+  color: var(--muted);
+  font-size: 1.08rem;
+  margin-bottom: 45px;
+}
+
+.riquesa-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 48px 55px;
+  min-height: 280px;
+}
+
+.riquesa-category {
+  display: block;
+  color: var(--bronze);
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.riquesa-card h3 {
+  font-size: clamp(2.3rem, 4vw, 3.5rem);
+  margin-bottom: 24px;
+}
+
+.riquesa-meaning {
+  font-size: 1.08rem;
+  margin-bottom: 20px;
+}
+
+.riquesa-example {
+  color: var(--muted);
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.7;
+}
+
+.riquesa-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  margin-top: 30px;
+  padding: 12px 28px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--ink);
+  color: white;
+  font-family: Manrope, system-ui, sans-serif;
+  font-size: .95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .2s, transform .2s;
+}
+
+.riquesa-button:hover {
+  background: var(--bronze);
+  transform: translateY(-2px);
+}
+
+.riquesa-button:focus-visible {
+  outline: 3px solid var(--bronze);
+  outline-offset: 4px;
+}
+
+@media (max-width: 560px) {
+  .riquesa-section {
+    padding: 75px 0 85px;
+  }
+
+  .riquesa-card {
+    padding: 35px 22px;
+    min-height: 0;
+  }
+
+  .riquesa-intro {
+    margin-bottom: 32px;
+  }
+}
