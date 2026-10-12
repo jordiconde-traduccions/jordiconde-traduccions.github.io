@@ -644,6 +644,12 @@ const riquesaEntrades = [
   },
   {
     "categoria": "Locució",
+    "expressio": "Tant per tant",
+    "significat": "Al mateix preu.",
+    "exemple": "Tant per tant, em quedaré els vermells."
+  },
+  {
+    "categoria": "Locució",
     "expressio": "A empentes i rodolons",
     "significat": "Amb moltes dificultats, d'una manera precària.",
     "exemple": "Vam arribar a final de mes a empentes i rodolons."
