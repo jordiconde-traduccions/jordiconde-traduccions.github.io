@@ -1201,109 +1201,193 @@ transform: translateX(340px);
 /* La riquesa de la llengua */
 
 .riquesa-section {
-  background: var(--paper);
-  padding: 105px 0 115px;
+  background: #f6f1e7;
+  padding: 68px 24px 75px;
   text-align: center;
+  border-radius: 22px;
+  margin: 35px auto;
+  max-width: 1200px;
 }
 
 .riquesa-wrap {
-  max-width: 850px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.riquesa-ornament {
-  color: var(--bronze);
-  font-family: "Cormorant Garamond", serif;
-  font-size: 3rem;
-  line-height: 1;
-  margin-bottom: 18px;
+.riquesa-heading {
+  text-align: center;
+}
+
+.riquesa-book {
+  color: #9a713e;
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+
+.riquesa-eyebrow {
+  color: #927349;
+  font-family: Manrope, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 19px;
 }
 
 .riquesa-section h2 {
   max-width: none;
-  font-size: clamp(2.8rem, 5vw, 4.5rem);
-  margin-bottom: 20px;
+  color: #292b25;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0 0 15px;
 }
 
 .riquesa-intro {
-  color: var(--muted);
-  font-size: 1.08rem;
-  margin-bottom: 45px;
+  color: #686b61;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.riquesa-divider {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  max-width: 650px;
+  margin: 28px auto;
+  color: #a07a4c;
+}
+
+.riquesa-divider::before,
+.riquesa-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #d9cbb6;
+}
+
+.riquesa-divider span {
+  font-size: 25px;
+  line-height: 1;
 }
 
 .riquesa-card {
-  background: var(--white);
-  border: 1px solid var(--line);
-  border-radius: 22px;
-  padding: 48px 55px;
-  min-height: 280px;
+  background: #fffefa;
+  border: 1px solid #e4dacb;
+  border-radius: 14px;
+  padding: 37px 45px 28px;
+  min-height: 0;
+  box-shadow: 0 5px 18px rgba(60, 45, 25, .035);
 }
 
 .riquesa-category {
   display: block;
-  color: var(--bronze);
-  font-size: .78rem;
+  color: #94703e;
+  font-family: Manrope, sans-serif;
+  font-size: 11px;
   font-weight: 700;
-  letter-spacing: .14em;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  margin-bottom: 18px;
+  margin-bottom: 17px;
 }
 
 .riquesa-card h3 {
-  font-size: clamp(2.3rem, 4vw, 3.5rem);
-  margin-bottom: 24px;
+  color: #30342c;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2.3rem, 4vw, 3.2rem);
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0 0 17px;
 }
 
 .riquesa-meaning {
-  font-size: 1.08rem;
-  margin-bottom: 20px;
+  color: #4c5049;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0 0 23px;
 }
 
 .riquesa-example {
-  color: var(--muted);
-  font-size: 1rem;
+  background: #f5f0e6;
+  color: #66645e;
+  border-radius: 8px;
+  padding: 17px 20px;
+  font-size: 14px;
   font-style: italic;
-  line-height: 1.7;
+  line-height: 1.65;
+  margin: 0;
 }
 
 .riquesa-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 52px;
-  margin-top: 30px;
-  padding: 12px 28px;
+  min-height: 49px;
+  margin-top: 27px;
+  padding: 12px 29px;
   border: 0;
   border-radius: 999px;
-  background: var(--ink);
-  color: white;
-  font-family: Manrope, system-ui, sans-serif;
-  font-size: .95rem;
+  background: #292c28;
+  color: #fff;
+  font-family: Manrope, sans-serif;
+  font-size: 13px;
   font-weight: 700;
   cursor: pointer;
   transition: background .2s, transform .2s;
 }
 
 .riquesa-button:hover {
-  background: var(--bronze);
+  background: #85643e;
   transform: translateY(-2px);
 }
 
 .riquesa-button:focus-visible {
-  outline: 3px solid var(--bronze);
+  outline: 3px solid #a07a4c;
   outline-offset: 4px;
+}
+
+.riquesa-footer {
+  color: #a28c6d;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 17px;
+  font-style: italic;
+  margin: 22px 0 0;
 }
 
 @media (max-width: 560px) {
   .riquesa-section {
-    padding: 75px 0 85px;
+    padding: 50px 15px 55px;
+    margin: 20px 12px;
+    border-radius: 16px;
   }
 
   .riquesa-card {
-    padding: 35px 22px;
-    min-height: 0;
+    padding: 29px 20px 20px;
+  }
+
+  .riquesa-section h2 {
+    font-size: 2.8rem;
   }
 
   .riquesa-intro {
-    margin-bottom: 32px;
+    font-size: 14px;
+  }
+
+  .riquesa-divider {
+    margin: 23px auto;
+  }
+
+  .riquesa-card h3 {
+    font-size: 2.5rem;
+  }
+
+  .riquesa-meaning {
+    font-size: 15px;
+  }
+
+  .riquesa-example {
+    font-size: 13px;
+    padding: 15px;
   }
 }
