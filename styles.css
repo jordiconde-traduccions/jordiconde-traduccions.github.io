@@ -1310,10 +1310,11 @@ transform: translateX(340px);
 
 .riquesa-example {
   background: #f5f0e6;
-  color: #66645e;
+  color: #786e60;
   border-radius: 8px;
   padding: 17px 20px;
-  font-size: 14px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 19px;
   font-style: italic;
   line-height: 1.65;
   margin: 0;
