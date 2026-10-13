@@ -98,6 +98,12 @@ const riquesaEntrades = [
   },
   {
     "categoria": "Frase feta",
+    "expressio": "No tenir-les totes",
+    "significat": "no estar del tot segur, convençut o tranquil sobre una cosa, o sentir por, dubte o recel.",
+    "exemple": "«És possible que no passi res, però encara no les tinc totes."
+  },
+  {
+    "categoria": "Frase feta",
     "expressio": "Fer la viu-viu",
     "significat": "Anar passant com es pot, sense gaires recursos.",
     "exemple": "Amb les feines esporàdiques, anem fent la viu-viu."
@@ -659,6 +665,12 @@ const riquesaEntrades = [
     "expressio": "D'amagatotis",
     "significat": "D'amagat, sense que els altres se n'adonin.",
     "exemple": "Va sortir d'amagatotis per preparar la sorpresa."
+  },
+  {
+    "categoria": "Locució",
+    "expressio": "Tenir-se-les",
+    "significat": "Discutir, disputar, etc., sobre alguna cosa.",
+    "exemple": "Els dos veïns se les tenen cada vegada que parlen de les obres de la comunitat."
   },
   {
     "categoria": "Locució",
