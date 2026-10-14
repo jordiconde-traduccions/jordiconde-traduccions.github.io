@@ -764,6 +764,24 @@ const riquesaEntrades = [
   },
   {
     "categoria": "Locució",
+    "expressio": "A estiracabells",
+    "significat": "Persones que es disputen l’obtenció d’alguna cosa prenent-se-la de les mans els uns dels altres.",
+    "exemple": "Hi havia rebaixes i tothom anava a estiracabells per mirar de trobar les millors ofertes."
+  },
+   {
+    "categoria": "Locució",
+    "expressio": "A estones perdudes",
+    "significat": "En els moments en què no hi ha una feina urgent.",
+    "exemple": "Fa mitja a estones perdudes."
+  },
+  {
+    "categoria": "Locució",
+    "expressio": "A estrebades",
+    "significat": "Amb moviments sobtats i violents.",
+    "exemple": "Notava com el dentista li arrencava el queixal a estrebades."
+  },
+  {
+    "categoria": "Locució",
     "expressio": "A tomballons / A capgirells",
     "significat": "Fent tombs o rodolant.",
     "exemple": "La pilota va baixar a tomballons pel pendent."
