@@ -254,6 +254,12 @@ const riquesaEntrades = [
   },
   {
     "categoria": "Frase feta",
+    "expressio": "Ficar-hi cullerada",
+    "significat": "Ficar-se on no et demanen.",
+    "exemple": "No em podia estar de ficar-hi cullerada i intentar mostrar-los per què s'havien equivocat."
+  },
+  {
+    "categoria": "Frase feta",
     "expressio": "Anar de corcoll",
     "significat": "Estar molt atrafegat o en una situació difícil.",
     "exemple": "Amb la mudança anem tots de corcoll."
@@ -731,6 +737,12 @@ const riquesaEntrades = [
     "expressio": "Frec a frec",
     "significat": "Molt a prop, gairebé tocant-se.",
     "exemple": "Els dos corredors van arribar frec a frec."
+  },
+   {
+    "categoria": "Locució",
+    "expressio": "A feixos",
+    "significat": "D'una manera abundosa, en gran quantitat.",
+    "exemple": "Vam anar al bosc i vam recollir castanyes a feixos."
   },
   {
     "categoria": "Locució",
